@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>900.中国 — 中文域名出租出售</title>
+    <meta name="description" content="精品中文域名900.中国，数字吉利、简单易记、谐音吉祥，适合电商、金融、教育、医疗等多个行业。现提供出租与出售两种方案，有意向请联系mfujun@agent.qq.com。">
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-light: #3b82f6;
+            --primary-dark: #1e40af;
+            --accent: #f59e0b;
+            --accent-light: #fbbf24;
+            --bg: #f8fafc;
+            --bg-white: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --text-muted: #94a3b8;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1a56db 50%, #3b82f6 100%);
+            color: white;
+            padding: 80px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .domain-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+
+        .domain-name {
+            font-size: 72px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+
+        .domain-name .suffix {
+            color: var(--accent-light);
+        }
+
+        .domain-tagline {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Section */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 32px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .feature-desc {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Pricing Cards */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 2px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: scale(1.02);
+        }
+
+        .pricing-card.featured::before {
+            content: '推荐';
+            position: absolute;
+            top: -12px;
+            right: 24px;
+            background: linear-gradient(135deg, var(--accent) 0%, #d97706 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .pricing-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .pricing-type {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .pricing-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .pricing-price {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .pricing-price .unit {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .pricing-desc {
+            color: var(--text-light);
+            font-size: 15px;
+            margin-top: 12px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: #dcfce7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(26, 86, 219, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Info Table */
+        .info-table {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            padding: 20px 24px;
+            background: var(--bg);
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        .info-value {
+            padding: 20px 24px;
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1a56db 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .contact-desc {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--radius-lg);
+            padding: 32px 48px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-email {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        .contact-hint {
+            margin-top: 16px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px 80px;
+            }
+
+            .domain-name {
+                font-size: 48px;
+            }
+
+            .domain-tagline {
+                font-size: 16px;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .stat-number {
+                font-size: 24px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .info-row {
+                grid-template-columns: 1fr;
+            }
+
+            .info-label {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .contact-box {
+                padding: 24px 32px;
+            }
+
+            .contact-email {
+                font-size: 18px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="domain-badge">🌐 精品中文域名</div>
+            <h1 class="domain-name">900<span class="suffix">.中国</span></h1>
+            <p class="domain-tagline">数字吉利 · 谐音吉祥 · 品牌增值首选</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">字符长度</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">🎯</span>
+                    <span class="stat-label">精准记忆</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">🇨🇳</span>
+                    <span class="stat-label">国家顶级域</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Value Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">域名价值解析</h2>
+            <p class="section-subtitle">为什么「900.中国」是一个值得拥有的精品域名</p>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-in delay-1">
+                    <div class="feature-icon">🔢</div>
+                    <h3 class="feature-title">简单易记</h3>
+                    <p class="feature-desc">纯数字组合，无需切换输入法即可输入，记忆成本为零。900 是常见的数字区段，国人天然熟悉。</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-2">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">数字吉利</h3>
+                    <p class="feature-desc">「900」含吉利数字 9，谐音"久你"、"就你"，寓意长久、优质、专属，具有积极向上的品牌联想。</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-3">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">品牌稀缺</h3>
+                    <p class="feature-desc">短字符中文域名数量有限，注册即拥有独特品牌资产，稀缺性决定长期价值。</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-1">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">SEO 友好</h3>
+                    <p class="feature-desc">百度给予中文域名更高信任分，短字符域名更易被用户记住和分享，提升搜索排名。</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-2">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">适用广泛</h3>
+                    <p class="feature-desc">电商、金融、教育、医疗、科技、生活服务等多个行业均可使用，市场覆盖面广。</p>
+                </div>
+                
+                <div class="feature-card animate-in delay-3">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">资产保护</h3>
+                    <p class="feature-desc">注册中文域名等于在数字世界占有一块"不动产"，防止品牌被抢注或仿冒。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Info Section -->
+    <section class="section" style="background: #f1f5f9;">
+        <div class="container">
+            <h2 class="section-title">域名基本信息</h2>
+            <p class="section-subtitle">专业评估，价值可见</p>
+            
+            <div class="info-table">
+                <div class="info-row">
+                    <div class="info-label">完整域名</div>
+                    <div class="info-value">900.中国（xn--5oq.cn）</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">顶级后缀</div>
+                    <div class="info-value">.中国（中国国家顶级域名，ICANN 认可）</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">字符类型</div>
+                    <div class="info-value">中文 + 数字，共 3 个字符</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">适用行业</div>
+                    <div class="info-value">电商零售、金融服务、教育培训、医疗健康、科技互联网、生活服务、企业服务等</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">核心优势</div>
+                    <div class="info-value">数字吉利、简单易记、谐音吉祥、SEO 友好、适用行业广</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">市场定位</div>
+                    <div class="info-value">中高端精品中文域名，适合品牌建设、投资收藏、多行业应用</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">合作方案</h2>
+            <p class="section-subtitle">根据您的实际需求，提供灵活的合作方式</p>
+            
+            <div class="pricing-grid">
+                <!-- Rental Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-type">短期使用</div>
+                        <h3 class="pricing-title">域名出租</h3>
+                        <div class="pricing-price">面议<span class="unit"> / 年</span></div>
+                        <p class="pricing-desc">适合短期营销活动、品牌测试、项目试点等场景</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span>年租方案，灵活使用</li>
+                        <li><span class="check-icon">✓</span>支持备案，合规运营</li>
+                        <li><span class="check-icon">✓</span>技术协助，快速上线</li>
+                        <li><span class="check-icon">✓</span>合同保障，权益清晰</li>
+                        <li><span class="check-icon">✓</span>期满可续租或转售</li>
+                    </ul>
+                    
+                    <a href="mailto:mfujun@agent.qq.com?subject=域名900.中国出租咨询" class="cta-button secondary">联系咨询</a>
+                </div>
+                
+                <!-- Sale Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <div class="pricing-type">长期持有</div>
+                        <h3 class="pricing-title">域名出售</h3>
+                        <div class="pricing-price">面议<span class="unit"> / 永久</span></div>
+                        <p class="pricing-desc">一次性购买，永久持有，品牌资产独占</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span>永久所有权，一次性交易</li>
+                        <li><span class="check-icon">✓</span>完整过户，域名转移</li>
+                        <li><span class="check-icon">✓</span>支持备案，企业可用</li>
+                        <li><span class="check-icon">✓</span>合同保障，交易安全</li>
+                        <li><span class="check-icon">✓</span>长期增值，稀缺资产</li>
+                    </ul>
+                    
+                    <a href="mailto:mfujun@agent.qq.com?subject=域名900.中国购买咨询" class="cta-button">立即咨询</a>
+                </div>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-muted); font-size: 14px; margin-top: 32px;">
+                💡 价格根据买家需求与使用场景协商确定，欢迎联系获取详细报价
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">联系方式</h2>
+            <p class="contact-desc">如有意向，请通过以下邮箱联系，我们将尽快回复</p>
+            
+            <div class="contact-box">
+                <a href="mailto:mfujun@agent.qq.com" class="contact-email">mfujun@agent.qq.com</a>
+                <p class="contact-hint">📧 邮件主题请注明：域名 900.中国 咨询</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 900.中国 域名展示页 | 本网页仅为域名展示用途，不构成任何投资或购买承诺</p>
+        <p style="margin-top: 8px; opacity: 0.7;">联系我们：<a href="mailto:mfujun@agent.qq.com">mfujun@agent.qq.com</a></p>
+    </footer>
+
+</body>
+</html>
