@@ -416,6 +416,42 @@
             opacity: 0.8;
         }
 
+        /* Feishu Contact Button */
+        .feishu-contact-box {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .feishu-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #3370FF 0%, #1a5ae8 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(51, 112, 255, 0.3);
+        }
+
+        .feishu-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(51, 112, 255, 0.4);
+        }
+
+        .feishu-icon {
+            font-size: 20px;
+        }
+
+        .feishu-hint {
+            margin-top: 8px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
         /* Footer */
         footer {
             background: var(--text);
@@ -694,8 +730,17 @@
     <section class="contact-section">
         <div class="container">
             <h2 class="contact-title">联系方式</h2>
-            <p class="contact-desc">如有意向，请通过以下邮箱联系，我们将尽快回复</p>
-            
+            <p class="contact-desc">如有意向，请通过以下方式联系，我们将尽快回复</p>
+
+            <!-- 飞书客服入口 -->
+            <div class="feishu-contact-box">
+                <a href="https://open.feishu.cn/app" target="_blank" rel="noopener noreferrer" class="feishu-button">
+                    <span class="feishu-icon">💬</span>
+                    <span class="feishu-text">飞书在线客服</span>
+                </a>
+                <p class="feishu-hint">点击添加客服微信或通过飞书联系我</p>
+            </div>
+
             <div class="contact-box">
                 <a href="mailto:mfujun@agent.qq.com" class="contact-email">mfujun@agent.qq.com</a>
                 <p class="contact-hint">📧 邮件主题请注明：域名 900.中国 咨询</p>
